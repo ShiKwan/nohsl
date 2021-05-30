@@ -1,38 +1,260 @@
-.App {
-  text-align: center;
+html {
+  font-family: 'Lato', sans-serif !important;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.AppContainer {
+  background-color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-size: 36px !important;
+  color: chocolate;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h3 {
+  font-size: 30px !important;
+  color: chocolate;
+}
+
+p {
+  font-size: 18px !important;
+  color: chocolate;
+}
+
+.header-container {
   display: flex;
-  flex-direction: column;
+  flex-direction : row;
+  justify-content: space-between;
+  background-color: black !important;
+  margin: 3rem 0;
+}
+
+
+.HeaderContainer h1 {
+  color: chocolate;
+  font-size: 36px;
+}
+
+.NavigationContainer {
+  display: flex;
+  flex-direction : row;
+  background-color: black !important;
+  border: none;
+}
+
+.NavigationContainer .item {
+  color: chocolate !important;
+}
+
+.NavigationContainer li {
+  padding: 0 12px;
+  list-style: none;
+}
+
+.JumbotronContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  min-height: 40vh;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 3rem 0;
+}
+
+.jumbotron-left {
+  max-width: 60%;
+}
+
+.jumbotron-right {
+  max-width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
+.jumbotron-intro {
+  display: flex !important;
+  align-items: center;
+  flex-wrap:wrap !important;
+}
+
+.SponsorContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+  padding-top: 45px !important;
+}
+
+
+.SponsorContainer li {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  margin: auto;
+  margin: 3rem 0;
+}
+
+.jumbotron {
+  min-height: 400px;
+  border : 1px solid black !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  background-color: black !important;
+  margin: 3rem 0;
+}
+
+.jumbotron-logo {
+  max-height: 350px;
+  margin: auto;
+
+}
+.jumbotron h3 {
+  font-size: 36px;
+}
+
+.jumbotron p {
+  font-size: 20px;
+}
+
+.jumbotron h3, .jumbotron p {
+  color : chocolate;
+}
+.field-condition-container {
+  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5) ), url('./img/layover.jpg') !important;
+  background-position: top !important;
+  background-repeat: no-repeat !important;
+  color: chocolate;
+  padding: 60px 0 ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  padding-top: 45px !important;
+  padding-bottom: 45px !important;
+}
+
+.field-condition-container a {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.field-condition-container a:hover {
+  color: lightgrey;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sponsor-container {
+  background-color: black !important;
+  color: chocolate !important;
+  margin: 3rem 0;
+  padding-top: 45px !important;
+}
+
+.field-condition-container {
+  background-color: black !important;
+}
+
+.sponsor-container p{
+  min-height: 50px;
+  display:flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content:space-around;
+}
+
+.contact-container { 
+  margin: 3rem 0;
+  padding-bottom: 60px;
+  background-color: black !important;
+  padding-top: 45px !important;
+}
+
+.contact-layover {
+  width: 100%
+}
+
+.vertical-image {
+  height: 360px;
+  /* background-image: url('./img/vertical-layover.jpg'); */
+  width: 100%;
+  /* background-image: linear-gradient(to right, white, black); */
+}
+
+.navigation-container {
+  text-align: center;
+  align-content: center;
+}
+
+.teamsnap-container {
+  min-height: 250px;
+  background-color: black !important;
+  padding-top: 45px !important;
+}
+
+.teams-container {
+  background-color: black !important;
+  padding-top: 45px !important;
+}
+
+.menu-item {
+  cursor: pointer;
+  background-color: chocolate !important;
+  color: white !important;
+  text-transform: uppercase !important;
+  font-weight: bolder;
+}
+
+.menu-item:hover {
+  background-color : black !important;
+}
+
+.team-schedule-button {
+  background-color:chocolate !important;
+  border: 1px white solid !important;
+}
+
+.team-schedule-button a {
+  color: white !important;
+}
+
+.team-schedule-button:hover {
+  background-color: black !important;
+}
+
+.jumbotron {
+  background : url('./img/spotlight.png') !important;
+  background-size :cover !important;
+
+  height: 700px;
+  display: flex;
+  align-items: flex-end;
+  background-repeat: no-repeat !important;
+}
+
+.jumbotron-content {
+  z-index: 10 !important;
+}
+.jumbotron:after {
+  content : '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background : linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 75%) !important
+}
+
+.background-image {
+  background-color : radial-gradient(ellipse at center, rgba(0,0,0,0) 20%,rgba(0,0,0,1) 100%);
+}
+
+
+.team-container {
+  background-color: lightgrey !important;
+  padding-top: 45px !important;
+}
+
+.footer-container {
+  height: 50px;
 }
