@@ -1,6 +1,7 @@
 {
   "name": "nohsl",
   "version": "0.1.0",
+  "homepage": "http://nohsl.com",
   "engines": {
     "node": "14.4.0"
   },
