@@ -9,7 +9,6 @@ import Navigation from './Navigation';
 import TeamSnap from './TeamSnap';
 import Teams from './Teams';
 import Footer from './Footer';
-import { SchemaMetaFieldDef } from 'graphql';
 
 function App() {
   const contextRef = createRef();
